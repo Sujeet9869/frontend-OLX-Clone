@@ -1,0 +1,301 @@
+/* .icons{
+    font-size: 32px;
+    height: 32px;
+    width: 32px;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.red-icons{
+    font-size: 32px;
+    height: 32px;
+    width: 32px;
+    color: red;
+    cursor: pointer;
+}
+
+
+.icons:hover{
+    color: #aaa;
+    
+}
+
+.icons-con{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: #fff;
+    margin: 5px;
+
+}
+
+.price-text{
+    color: #002f34;
+}
+
+.clear-btn{
+    height: 25px;
+    background-color:#002f34 ;
+    color: #fff;
+    border-radius: 6PX;
+    outline: none;
+    border: none;
+    padding: 0px 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+   
+
+} */
+
+/* Home.css */
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 20px;
+  }
+  
+  .card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  } */
+  
+  .card img {
+    width: 300px;
+    height: 220px;
+    object-fit: cover;
+  }
+  
+  .icons-con {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 8px;
+  }
+  
+  .icons,
+  .red-icons {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+
+  
+  .icons:hover {
+    color: #aaa;
+  }
+  
+  .red-icons {
+    color: red;
+  }
+  
+  .price-text {
+    font-weight: bold;
+    color: #002f34;
+    margin: 8px 0;
+  }
+  
+  .clear-btn {
+    height: 32px;
+    background-color: #002f34;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0 16px;
+    cursor: pointer;
+  }
+  
+  .clear-btn:hover {
+    background-color: #004346;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .card {
+      width: 90%;
+    }
+  
+    .icons,
+    .red-icons {
+      font-size: 20px;
+    }
+  
+    .product-container {
+      gap: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 100%;
+    }
+  
+    .price-text {
+      font-size: 18px;
+    }
+  
+    .clear-btn {
+      font-size: 14px;
+      padding: 0 12px;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+  /* MyProducts css  */
+
+
+
+
+
+/* General container styling */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Card styling */
+.card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.2s;
+    position: relative;
+}
+
+/* .card:hover {
+    transform: scale(1.02);
+} */
+
+/* Image styling */
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Product details */
+.product-name {
+    font-size: 18px;
+    margin: 10px;
+    color: #333;
+}
+
+.product-price {
+    font-size: 22px;
+    color: #d9534f;
+    margin: 10px;
+}
+
+.product-desc {
+    font-size: 16px;
+    color: #5cb85c;
+    margin: 10px;
+}
+
+.edit-link {
+    margin: 10px;
+    font-size: 14px;
+}
+
+.edit-link a {
+    text-decoration: none;
+    color: #0275d8;
+}
+
+.edit-link a:hover {
+    text-decoration: underline;
+}
+
+/* Delete button */
+.delete-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #d9534f;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c9302c;
+}
+
+/* Like icon styling */
+.icons-con {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* .icons {
+    font-size: 20px;
+    color: #d9534f;
+} */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+
+    .product-image {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+
+    .product-image {
+        height: 150px;
+    }
+
+    .product-name,
+    .product-price,
+    .product-desc {
+        font-size: 14px;
+    }
+
+    .delete-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+

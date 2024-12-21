@@ -1,0 +1,94 @@
+/* General Styles */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    width: 300px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+} */
+
+.product-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    color: #002f34;
+}
+
+.product-card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.product-card .product-desc {
+    color: #28a745;
+}
+
+/* Like Icon */
+.like-container {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.like-icon {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.like-icon.liked {
+    color: red;
+}
+
+.like-icon:hover {
+    color: #ff5555;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .product-card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .products-container {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product-card {
+        padding: 10px;
+    }
+
+    .product-card img {
+        height: 150px;
+    }
+
+    .product-card h3 {
+        font-size: 16px;
+    }
+}
